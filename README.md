@@ -23,7 +23,7 @@ Dacon 모션 키포인트 검출 AI경진대회는 사람이 어떤 운동을 �
 ## About the model
 
 
-* ___EDA___ :주어진 이미지와 keypoint지점을 사진위에 표현하며 제공된 데이터가 정확한 좌표를 포함하는 지 확인
+* ___EDA___ : dacon에서 제공하는 이미지와 keypoint지점을 사진위에 표현하며 제공된 데이터가 정확한 좌표를 포함하는지 확인
 
 
 <img src="https://user-images.githubusercontent.com/77844152/132149470-0a64cd9b-af0e-477b-aa9b-3e7c065ebcf3.png" width="500" height="300">
@@ -31,7 +31,7 @@ Dacon 모션 키포인트 검출 AI경진대회는 사람이 어떤 운동을 �
  
 * ___Preprocessing___ :  keypoint matching이 제대로 되지 않은 데이터 총 101개를 제거
 
-* ___Augmentation___ : albumentation library를 이용. HorizontalFlip, RandomRotate90, VerticalFlip , MotionBlur, GaussNoise, Normalize
+* ___Augmentation___ : albumentation library를 이용. HorizontalFlip, RandomRotate90, MotionBlur, GaussNoise, Normalize
 
 * ___Resnet___ : 참가자 공유코드를 베이스라인으로 삼아 resnet18,resnet34,wide resnet 등 모델의 깊이를 변경하고 batch size,lr,epoch을 조정하며 train
 
@@ -53,6 +53,11 @@ Dacon 모션 키포인트 검출 AI경진대회는 사람이 어떤 운동을 �
 	- detectron2
 	- mask r-cnn
 
+
+## Project Report
+
+Click [Here](https://drive.google.com/file/d/1Lpa7W7CeAKZmVW951RScrL2dIgGH7Ls3/view?usp=sharing)
+
 ## Reference
 
 *   [dacon-data](https://dacon.io/competitions/official/235701/data)<br/>
@@ -60,10 +65,6 @@ Dacon 모션 키포인트 검출 AI경진대회는 사람이 어떤 운동을 �
 *   [albumentations-team/albumentations](https://github.com/albumentations-team/albumentations)
 *   [liuzhuang13/DenseNet](https://github.com/liuzhuang13/DenseNet)
 *   [facebookresearch/detectron2](https://github.com/facebookresearch/detectron2)
-
-## Project Report
-
-Click [Here](https://drive.google.com/file/d/1Lpa7W7CeAKZmVW951RScrL2dIgGH7Ls3/view?usp=sharing)
 
 
 ## Contributors
